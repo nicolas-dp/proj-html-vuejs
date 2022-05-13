@@ -1,23 +1,20 @@
 <template>
   <div id="app">
     <SiteHeader />
-    
   </div>
 </template>
 
 <script>
-import SiteHeader from '@/components/SiteHeader.vue'
+import SiteHeader from "@/components/SiteHeader.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     SiteHeader,
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/style.scss';
-
-
+@import "@/assets/scss/style.scss";
 </style>

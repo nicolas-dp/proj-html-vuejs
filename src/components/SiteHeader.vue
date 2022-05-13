@@ -1,25 +1,29 @@
 <template>
   <header>
-    <div class="container">
+    <div class="jumbo">
       <nav class="navbar">
-        <div class="logo">
-          <img src="@/assets/img/logo-restaurant.png" alt="logo" />
+        <div class="container">
+          <LogoComponent />
+          <ul class="navbar-nav flex-row">
+            <Navbar :link="link" v-for="link in links" :key="link.id" />
+          </ul>
         </div>
-        <ul class="navbar-nav flex-row">
-          <Navbar :link="link" v-for="link in links" :key="link.id" />
-        </ul>
       </nav>
+      <div class="jumbo_text container">
+        <h3 class="text-white">Mio Testo</h3>
+      </div>
     </div>
-    <div class="jumbo"></div>
   </header>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
+import LogoComponent from "@/components/LogoComponent.vue"
 export default {
   name: "SiteHeader",
   components: {
     Navbar,
+    LogoComponent,
   },
 
   data() {
@@ -76,6 +80,13 @@ export default {
 header {
   background-color: black;
 }
+
+nav {
+  font-size: 15px;
+  li {
+    padding: 0.5rem;
+  }
+}
 .navbar {
   /* position: fixed; */
   background-color: rgba(0, 0, 0, 0.301);
@@ -87,5 +98,9 @@ header {
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.jumbo_text {
+  width: 40%;
 }
 </style>

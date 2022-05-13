@@ -1,8 +1,11 @@
 <template>
   <li class="nav-item">
-    <a class="nav-link active" href="#">{{ link.text }}
-        <span v-if="link.icon"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></span>
-        <span class="btn-new" v-if="link.text == 'Takeout'">New</span>
+    <a class="nav-link active" href="#"
+      >{{ link.text }}
+      <span v-if="link.icon"
+        ><font-awesome-icon icon="fa-solid fa-cart-shopping"
+      /></span>
+      <span class="btn-new" v-if="link.text == 'Takeout'">New</span>
     </a>
   </li>
 </template>
@@ -17,17 +20,15 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-nav {
-  
-  font-size: 10px;
-  li {
-      padding: 0.5rem;
-      
-  }
+<style lang="scss">
+.nav-item > a {
+  color: white;
+}
 
-  .nav-item>a{
-      color: white;
-  }
+.btn-new {
+  border: 1px solid white;
+  font-size: 10px;
+  padding: 0.3rem;
+  vertical-align: text-bottom;
 }
 </style>
