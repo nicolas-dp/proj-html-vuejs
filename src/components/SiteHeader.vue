@@ -3,27 +3,29 @@
     <div class="jumbo">
       <nav class="navbar">
         <div class="container">
+          <!-- Componente Logo -->
           <LogoComponent />
           <ul class="navbar-nav flex-row">
+            <!-- Creazione dinamica dei link presenti nella navbar -->
             <Navbar :link="link" v-for="link in links" :key="link.id" />
           </ul>
         </div>
       </nav>
-      <div class="jumbo_text container">
-        <h3 class="text-white">Mio Testo</h3>
-      </div>
+      <JumboFirst />
     </div>
   </header>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
-import LogoComponent from "@/components/LogoComponent.vue"
+import LogoComponent from "@/components/LogoComponent.vue";
+import JumboFirst from "@/components/JumboFirst.vue"
 export default {
   name: "SiteHeader",
   components: {
     Navbar,
     LogoComponent,
+    JumboFirst,
   },
 
   data() {
@@ -94,13 +96,19 @@ nav {
 
 .jumbo {
   background-image: url("@/assets/img/slider52x.jpg");
-  height: 100vh;
   background-position: right;
+  height: 100vh;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 60%;
 }
 
-.jumbo_text {
-  width: 40%;
-}
+
+
+
+
+
+
+
+
+
 </style>

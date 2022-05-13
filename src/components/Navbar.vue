@@ -1,5 +1,5 @@
 <template>
-  <li class="nav-item">
+  <li class="nav-item ">
     <a class="nav-link active" href="#"
       >{{ link.text }}
       <span v-if="link.icon"
@@ -22,11 +22,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 .nav-item > a {
-  color: white;
+  color: var(--small-textColor);
+
+}
+
+li:hover a{
+  color: white!important;
 }
 
 .btn-new {
-  border: 1px solid white;
+  border: 1px solid var(--small-textColor);
   font-size: 10px;
   padding: 0.3rem;
   vertical-align: text-bottom;
