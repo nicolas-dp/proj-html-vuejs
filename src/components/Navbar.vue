@@ -1,6 +1,9 @@
 <template>
   <li class="nav-item">
-    <a class="nav-link active" href="#">{{ link }}</a>
+    <a class="nav-link active" href="#">{{ link.text }}
+        <span v-if="link.icon"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></span>
+        <span class="btn-new" v-if="link.text == 'Takeout'">New</span>
+    </a>
   </li>
 </template>
 
@@ -8,7 +11,7 @@
 export default {
   name: "NavBar",
   props: {
-    link: Array,
+    link: Object,
   },
 };
 </script>
