@@ -12,13 +12,10 @@
 
 }
 
-
 p{
   margin-bottom: 4rem;
-  
   line-height: 1.8rem;
 }
-
 
 .btn_white{
   border: 1px solid var(--small-textColor);
@@ -27,6 +24,7 @@ p{
   text-decoration: none;
   color: black;
   font-weight: bold;
+  
   &:hover{
     border: 1px solid black;
     font-weight: normal;
@@ -34,4 +32,49 @@ p{
   }
 }
 
+.btn_dark {
+  border: 1px solid var(--small-textColor);
+  font-size: 13px;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  &:hover {
+  background-color: white;
+  color: black;
+}
+}
 
+.main_text{
+  color: white;
+}
+
+.title_small, .main_text {
+  small,
+  p {
+    margin-top: 3rem;
+    color: var(--small-textColor)!important;
+  }
+
+
+}
+
+.text_best {
+  border-top: 1px solid var(--small-textColor);
+  width: 23px;
+  height: 5px;
+  margin-right: 2rem;
+  display: inline-block;
+}
+
+
+.border {
+  margin-bottom: 2rem;
+  width: 14%;
+  display: inline-block;
+}
+
+.col_dark {
+  
+  padding: 4rem;
+  background-color: black;
+}

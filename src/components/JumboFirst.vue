@@ -39,22 +39,12 @@ export default {
 }
 
 
-.col-4 {
+.title_small{
   small,
   p {
     color: var(--small-textColor);
   }
 }
 
-.btn_dark {
-  border: 1px solid var(--small-textColor);
-  font-size: 13px;
-  padding: 0.5rem;
-  text-decoration: none;
-  
-  &:hover {
-  background-color: white;
-  color: black;
-}
-}
+
 </style>

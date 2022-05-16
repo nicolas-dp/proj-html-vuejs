@@ -1,85 +1,39 @@
 <template>
   <div id="app">
     <SiteHeader />
-    <section id="hero_roll">
+    <HeroRoll />
+    <BestTable />
+    <section id="critics">
       <div class="container">
-        <div class="row mt-3 justify-content-between">
-          <div class="col-5">
-            <div class="hero_text">
-              <small>
-                <strong>HAC TELLUS, FELIS RISUS AT </strong>mattis mattis. Eget
-                cuismod semper eget tortor, donee amet, blandit. Tristique
-                facilisi faucibus elementum feugiat in nam in feugiat. Ipsum
-                odio etiam duis facilisis amet vulputate.
-              </small>
-
-              <h2 class="fw-bold">
-                FOOD IS OUR COMMON GROUND, A UNIVERSAL EXPERIENCE
-              </h2>
-
-              <small>
-                Tristique tempus condimentum diam donee. Condimentum ullamcorper
-                sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam
-                scelerisque netus viverra dui.
-              </small>
+        <h3 class="fst-italic text-center">What critics are saying about us</h3>
+        <div class="text_best"></div>
+        <div class="row">
+          <div class="col-6 p-0">
+            <img class="img-fluid" src="@/assets/img/blog72x.jpg" alt="..." />
+          </div>
+          <div class="col-6 col_dark">
+            <div class="title_small">
+              
+              <small>MEGGY STEWART</small>
             </div>
-            <div class="hero_signature">
-              <img
-                class="signature"
-                height="120"
-                src="@/assets/img/signature.jpg"
-                alt="..."
-              />
+            <div class="main_text p-5">
+              <h2 class="fw-bold fs-1">NEW YORK TIMES</h2>
+
+              <div class="text_best"></div>
+              <p calss="fw-light p-3">
+                Pallentesque vitae viverra risus, sagittis. Venenatis ridiculus
+                scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
+              </p>
+              <p calss="fw-light p-3">
+                Sit tempor a et nisl, ac felis.Venenatis ridiculus
+                scelerisque nisi in urna nulla.
+              </p>
+              <a href="#" class="btn_dark"><small>READ FULL ARTICLE</small></a>
             </div>
           </div>
-          <div class="col-5">
-            <div class="hero_image">
-              <img class="img-fluid" src="@/assets/img/info22x.jpg" alt="..." />
-              <span class="fw-bold text-white">CALIFORNIA ROLLS - $22</span>
-            </div>
-          </div>
+          <div class="col"></div>
+          <div class="col"></div>
         </div>
-
-        <section class="link_hero_roll">
-          <div class="row mt-5 text-center">
-            <div class="col">
-              <img src="@/assets/img/sushi-1.png" alt="" />
-              <h6>THE BEST TABLE IN TOWN</h6>
-              <div class="border"></div>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-                dolorum nostrum temporibus unde. Inventore illo et ad ut, minus
-                beatae neque eveniet aliquam, dolores dolorem quae veniam
-                temporibus iusto quisquam!
-              </p>
-              <a href="#" class="btn_white">EXPLORE THE MENU</a>
-            </div>
-            <div class="col">
-              <img src="@/assets/img/sushi-2.png" alt="" />
-              <h6>PERFECT FOR GROUPS</h6>
-              <div class="border"></div>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-                dolorum nostrum temporibus unde. Inventore illo et ad ut, minus
-                beatae neque eveniet aliquam, dolores dolorem quae veniam
-                temporibus iusto quisquam!
-              </p>
-              <a href="#" class="btn_white">MAKE A RESERVATION</a>
-            </div>
-            <div class="col">
-              <img src="@/assets/img/sushi-3.png" alt="" />
-              <h6>FRESH PRODUCE EVERYDAY</h6>
-              <div class="border"></div>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-                dolorum nostrum temporibus unde. Inventore illo et ad ut, minus
-                beatae neque eveniet aliquam, dolores dolorem quae veniam
-                temporibus iusto quisquam!
-              </p>
-              <a href="#" class="btn_white">LEARN MORE ABOUT US</a>
-            </div>
-          </div>
-        </section>
       </div>
     </section>
   </div>
@@ -87,11 +41,15 @@
 
 <script>
 import SiteHeader from "@/components/SiteHeader.vue";
+import HeroRoll from "@/components/HeroRoll.vue";
+import BestTable from "@/components/BestTable.vue";
 
 export default {
   name: "App",
   components: {
     SiteHeader,
+    HeroRoll,
+    BestTable,
   },
 };
 </script>
@@ -99,59 +57,7 @@ export default {
 <style lang="scss">
 @import "@/assets/scss/style.scss";
 
-.hero_text {
-  margin-top: 2rem;
-}
-
-.hero_image {
-  position: relative;
-
-  &:hover {
-    filter: drop-shadow(0px 0px 6px black);
-  }
-
-  span {
-    position: absolute;
-    left: 11rem;
-    bottom: 2rem;
-    font-size: 12px;
-    filter: drop-shadow(2px 4px 6px px black);
-  }
-}
-.col-5 {
-  padding: 3rem;
-  margin-top: 3rem;
-  small {
-    font-size: 16px;
-  }
-
-  h2 {
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    line-height: 3rem;
-  }
-
-  .signature {
-    margin-top: 2rem;
-  }
-}
-
-.link_hero_roll {
-  h6 {
-    margin: 2rem 0 2rem;
-    font-weight: bold;
-  }
-
-  .border {
-    margin-bottom: 2rem;
-    width: 14%;
-    display: inline-block;
-  }
-
-  p {
-    font-size: 14px;
-    padding: 0 3rem 0;
-    margin-bottom: 1.5rem;
-  }
+#critics .text_best{
+  width: 50px;
 }
 </style>

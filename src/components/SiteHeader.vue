@@ -97,7 +97,7 @@ nav {
 .jumbo {
   background-image: url("@/assets/img/slider52x.jpg");
   background-position: right;
-  height: 100vh;
+  
   background-repeat: no-repeat;
   background-size: 60%;
 }
