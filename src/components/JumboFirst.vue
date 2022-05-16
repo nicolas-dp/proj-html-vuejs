@@ -51,9 +51,10 @@ export default {
   font-size: 13px;
   padding: 0.5rem;
   text-decoration: none;
-}
-
-.btn_dark:hover {
+  
+  &:hover {
   background-color: white;
+  color: black;
+}
 }
 </style>
