@@ -50,7 +50,7 @@
               beatae neque eveniet aliquam, dolores dolorem quae veniam
               temporibus iusto quisquam!
             </p>
-            <a href="#" class="btn_white">EXPLORE THE MENU</a>
+            <a href="#menu" class="btn_white">EXPLORE THE MENU</a>
           </div>
           <div class="col">
             <img src="@/assets/img/sushi-2.png" alt="" />

@@ -3,7 +3,7 @@
     <SiteHeader />
     <HeroRoll />
     <BestTable />
-    <section id="critics">
+    <section id="critics" class="mt-4">
       <div class="container">
         <h3 class="fst-italic text-center">What critics are saying about us</h3>
         <div class="text_best" style="left: 48%; position: relative"></div>
@@ -107,7 +107,7 @@
       </div>
     </section>
 
-    <section id="promotions">
+    <section id="promotions" class="mt-4">
       <div class="container">
         <h3 class="fst-italic text-center">Latest news E promotions</h3>
         <div class="text_best" style="left: 48%; position: relative"></div>
@@ -220,6 +220,30 @@
                 <p>{{ menu.description }}</p>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="braised_abalone">
+      <div class="bg_braised">
+        <div class="container">
+          <div class="main_text p-5">
+            <h2 class="fw-bold fs-1">BRAISED ABALONE</h2>
+            <span>$ 52</span>
+            <div class="text_best"></div>
+            <p calss="fw-light p-3">
+              Pallentesque vitae viverra risus, sagittis. Venenatis ridiculus
+              scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
+            </p>
+            <a href="#" class="btn_dark"
+              ><small
+                ><font-awesome-icon
+                  class="pe-1"
+                  icon="fa-solid fa-car-side"
+                />VIEW TAKE OUT MENU</small
+              ></a
+            >
           </div>
         </div>
       </div>
@@ -345,8 +369,6 @@ export default {
   width: 50px;
 }
 
-
-
 #critics {
   a > small {
     font-size: 10px;
@@ -416,7 +438,7 @@ export default {
     justify-content: space-between;
   }
 
-  h4{
+  h4 {
     padding: 2rem;
   }
 }
@@ -442,6 +464,23 @@ export default {
   span,
   p {
     color: var(--small-textColor);
+  }
+}
+
+/* BRAISED ABALONE */
+
+.bg_braised {
+  background-image: url("@/assets/img/hero42x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+#braised_abalone {
+  .main_text {
+    background-color: black;
+    width: 30%;
+    transform: translate(30%, 20%);
   }
 }
 </style>

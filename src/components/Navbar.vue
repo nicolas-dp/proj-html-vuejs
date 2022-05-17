@@ -1,6 +1,6 @@
 <template>
   <li class="nav-item ">
-    <a class="nav-link active" href="#"
+    <a class="nav-link active" :href="'#'+link.text"
       >{{ link.text }}
       <span v-if="link.icon"
         ><font-awesome-icon icon="fa-solid fa-cart-shopping"

@@ -11,7 +11,7 @@
           Pallentesque vitae viverra risus, sagittis. Venenatis ridiculus
           scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
         </p>
-        <a href="#" class="btn_dark"><small>EXPLORE THE MENU</small></a>
+        <a href="#menu" class="btn_dark"><small>EXPLORE THE MENU</small></a>
       </div>
     </div>
   </div>
