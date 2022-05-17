@@ -102,8 +102,8 @@
     </section>
 
     <section id="kung_pao">
-      <div class="container-fluid">
-
+      <div class="middle_jumbo">
+        <span class="fw-bold text-white">KUNG PAO CHICKEN - $32</span>
       </div>
     </section>
   </div>
@@ -150,13 +150,19 @@ export default {
   background-color: #00000082;
 }
 
-#kung_pao{
-  &div{
-    margin-top: 4rem;
-    background-image: url('@/assets/img/page52x.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
+.middle_jumbo {
+  position: relative;
+  margin-top: 4rem;
+  background-image: url("@/assets/img/page52x.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.middle_jumbo span {
+  position: absolute;
+  bottom: 2rem;
+  left: 45%;
+  filter: drop-shadow(2px 4px 6px black);
 }
 </style>
