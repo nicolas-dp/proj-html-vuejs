@@ -19,7 +19,7 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import LogoComponent from "@/components/LogoComponent.vue";
-import JumboFirst from "@/components/JumboFirst.vue"
+import JumboFirst from "@/components/JumboFirst.vue";
 export default {
   name: "SiteHeader",
   components: {
@@ -90,25 +90,18 @@ nav {
   }
 }
 .navbar {
-  /* position: fixed; */
-  background-color: rgba(0, 0, 0, 0.301);
+  background-color: rgb(0 0 0 / 68%);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
 }
 
 .jumbo {
   background-image: url("@/assets/img/slider52x.jpg");
   background-position: right;
-  
+
   background-repeat: no-repeat;
   background-size: 60%;
 }
-
-
-
-
-
-
-
-
-
-
 </style>

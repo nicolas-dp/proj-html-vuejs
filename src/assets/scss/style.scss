@@ -1,35 +1,43 @@
 @import '~/node_modules/bootstrap/scss/bootstrap.scss';
 
 #app {
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    
-  }
+  font-family: 'Montaga', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
- :root{
+}
+
+:root {
   --small-textColor: #BCBCBC;
 
 }
 
-p{
+.nav-link>a:active {
+  color: white;
+}
+
+p {
   margin-bottom: 4rem;
   line-height: 1.8rem;
 }
 
-.btn_white{
+.btn_white {
   border: 1px solid var(--small-textColor);
   font-size: 10px;
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: black;
   font-weight: bold;
-  
-  &:hover{
+
+  &:hover {
     border: 1px solid black;
     font-weight: normal;
     color: var(--small-textColor);
   }
+}
+
+/* .nav-link:hover,  */.nav-link:focus {
+  color: #ffffff;
 }
 
 .btn_dark {
@@ -38,21 +46,24 @@ p{
   padding: 0.5rem 1.5rem;
   text-decoration: none;
   color: white;
+
   &:hover {
-  background-color: white;
-  color: black;
-}
+    background-color: white;
+    color: black;
+  }
 }
 
-.main_text{
+.main_text {
   color: white;
 }
 
-.title_small, .main_text {
+.title_small,
+.main_text {
+
   small,
   p {
     margin-top: 3rem;
-    color: var(--small-textColor)!important;
+    color: var(--small-textColor) !important;
   }
 
 
@@ -74,11 +85,10 @@ p{
 }
 
 .col_dark {
-  
   padding: 4rem;
   background-color: black;
 }
 
-.star{
+.star {
   color: white;
 }

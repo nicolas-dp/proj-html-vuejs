@@ -1,5 +1,5 @@
 <template>
-  <div class="jumbo_text container mt-5 mb-5">
+  <div class="jumbo_text container mb-5">
     <div class="col-4">
       <div class="title_small">
         <div class="text_best"></div>
@@ -27,6 +27,7 @@ export default {
 <style lang="scss">
 .jumbo_text {
   color: white;
+  padding-top: 6rem;
 }
 
 
