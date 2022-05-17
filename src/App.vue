@@ -6,34 +6,104 @@
     <section id="critics">
       <div class="container">
         <h3 class="fst-italic text-center">What critics are saying about us</h3>
-        <div class="text_best"></div>
-        <div class="row">
-          <div class="col-6 p-0">
+        <div class="text_best" style="left: 48%; position: relative"></div>
+        <div class="row justify-content-center">
+          <div class="col-5 p-0">
             <img class="img-fluid" src="@/assets/img/blog72x.jpg" alt="..." />
           </div>
-          <div class="col-6 col_dark">
+          <div class="col-5 col_dark">
             <div class="title_small">
-              
               <small>MEGGY STEWART</small>
             </div>
-            <div class="main_text p-5">
-              <h2 class="fw-bold fs-1">NEW YORK TIMES</h2>
-
+            <div class="main_text">
+              <h3 class="fw-bold">NEW YORK TIMES</h3>
+              <div class="star">
+                <font-awesome-icon
+                  icon="fa-solid fa-star"
+                  v-for="i in 5"
+                  :key="i"
+                  class="p-1"
+                />
+              </div>
               <div class="text_best"></div>
-              <p calss="fw-light p-3">
+              <p calss="fw-light">
                 Pallentesque vitae viverra risus, sagittis. Venenatis ridiculus
                 scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
               </p>
-              <p calss="fw-light p-3">
-                Sit tempor a et nisl, ac felis.Venenatis ridiculus
-                scelerisque nisi in urna nulla.
+              <p calss="fw-light">
+                Sit tempor a et nisl, ac felis.Venenatis ridiculus scelerisque
+                nisi in urna nulla.
               </p>
               <a href="#" class="btn_dark"><small>READ FULL ARTICLE</small></a>
             </div>
           </div>
-          <div class="col"></div>
-          <div class="col"></div>
+          <!-- The guardian -->
+          <div class="col-5">
+            <div class="card_critics">
+              <img class="img-fluid" src="@/assets/img/info52x.jpg" alt="..." />
+              <div class="text_hover">
+                <div class="title_small">
+                  <small>MARY MAXEY</small>
+                </div>
+                <div class="main_text">
+                  <h3 class="fw-bold">THE GUARDIAN</h3>
+                  <div class="star">
+                    <font-awesome-icon
+                      icon="fa-solid fa-star"
+                      v-for="i in 5"
+                      :key="i"
+                      class="p-1"
+                    />
+                  </div>
+                  <div class="text_best"></div>
+                  <p calss="fw-light">
+                    Non arcu mauris tortor ultriees mollis tellus euismod
+                    fermentum. Habitant amet tineidunt id sapien accumsan sed.
+                  </p>
+                  <a href="#" class="btn_dark"
+                    ><small>READ FULL ARTICLE</small></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Globe and mail -->
+          <div class="col-5">
+            <div class="card_critics">
+              <img class="img-fluid" src="@/assets/img/info12x.jpg" alt="..." />
+              <div class="text_hover">
+                <div class="title_small">
+                  <small>PATRICK MONROE</small>
+                </div>
+                <div class="main_text">
+                  <h3 class="fw-bold">GLOBE AND MAIL</h3>
+                  <div class="star">
+                    <font-awesome-icon
+                      icon="fa-solid fa-star"
+                      v-for="i in 5"
+                      :key="i"
+                      class="p-1"
+                    />
+                  </div>
+                  <div class="text_best"></div>
+                  <p calss="fw-light">
+                    Vivamus magna justo, lacinia eget conseetetur sed, convallis
+                    at tellus. Nulla porttitor accumsan tincidunt.
+                  </p>
+                  <a href="#" class="btn_dark"
+                    ><small>READ FULL ARTICLE</small></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="kung_pao">
+      <div class="container-fluid">
+
       </div>
     </section>
   </div>
@@ -57,7 +127,36 @@ export default {
 <style lang="scss">
 @import "@/assets/scss/style.scss";
 
-#critics .text_best{
+#critics .text_best {
   width: 50px;
+}
+
+#critics {
+  a > small {
+    font-size: 10px;
+  }
+}
+
+.card_critics {
+  position: relative;
+}
+
+.text_hover {
+  box-shadow: inset 0 166px 97px 20px #000000cf;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 5rem;
+  background-color: #00000082;
+}
+
+#kung_pao{
+  &div{
+    margin-top: 4rem;
+    background-image: url('@/assets/img/page52x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 }
 </style>
