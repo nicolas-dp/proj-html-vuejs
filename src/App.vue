@@ -154,14 +154,16 @@ export default {
   position: relative;
   margin-top: 4rem;
   background-image: url("@/assets/img/page52x.jpg");
-  height: 100vh;
+  height: 500px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: contain;
+  margin-right: -1rem;
 }
 
 .middle_jumbo span {
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   left: 45%;
   filter: drop-shadow(2px 4px 6px black);
 }
