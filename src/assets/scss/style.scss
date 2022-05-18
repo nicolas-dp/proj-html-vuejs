@@ -92,3 +92,30 @@ p {
 .star {
   color: white;
 }
+
+/* MENU */
+
+.bg_gray {
+  background-color: var(--small-textColor);
+  padding: 3rem;
+
+  h6,
+  span {
+    font-weight: bold;
+  }
+}
+
+.bg_main_menu {
+  background-image: url("@/assets/img/misc22x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  margin-top: -3rem;
+  color: white;
+  box-shadow: inset 0 35rem 30rem 21px rgb(0 0 0 / 92%);
+  span,
+  p {
+    color: var(--small-textColor);
+  }
+}
